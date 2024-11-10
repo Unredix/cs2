@@ -2,6 +2,9 @@ window.addEventListener("scroll", function () {
   //let element = document.getElementById("myElement");
   if (window.scrollY > 50) {
     this.document.getElementById("article1").classList.add("animate");
+    this.document
+      .getElementById("scroll-text")
+      .classList.add("animate-reverse");
   }
   if (window.scrollY > 300) {
     this.document.getElementById("article2").classList.add("animate");
