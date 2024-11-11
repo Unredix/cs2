@@ -2,7 +2,7 @@ body,
 header {
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(254, 172, 10);
 }
 
 .header-line {
@@ -13,6 +13,7 @@ header {
   background-color: rgb(254, 172, 10);
   justify-content: center;
   position: fixed;
+  z-index: 100;
   box-sizing: border-box;
 }
 
@@ -22,36 +23,34 @@ header {
   height: 40px;
   align-items: center;
 }
+
+.header-content a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 13px;
+}
+
+.header-content a:hover {
+  background-color: aliceblue;
+}
+.current-site {
+  border: 1px solid black;
+  border-top: 0;
+}
 .banner-img {
   width: 100%;
 }
 .banner-img img {
   width: 100%;
 }
-.current-site {
-  border: 1px solid black;
-  border-top: 0;
-}
-
-.header-content a {
-  text-decoration: none;
-  color: black;
-  padding: 10px 15px;
-}
-.header-content a:hover {
-  background-color: aliceblue;
-}
-
 .main-content {
-  gap: 30px;
   width: 100%;
-
   margin-top: 10px;
+  animation: from-left 0.7s ease-in;
 }
 
 .main-content img {
   width: 30%;
-  box-shadow: 6px 10px 10px rgb(73, 73, 73);
   border-radius: 10px;
   margin-left: 10px;
 }
@@ -64,6 +63,14 @@ header {
   flex-direction: row;
   margin-bottom: 50px;
   width: 100%;
+  max-width: 1700px;
+  padding: 5px 0px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: black;
+  color: white;
 }
 
 .text-title {
@@ -74,6 +81,7 @@ header {
 .text-content {
   font-size: 1.3em;
   text-align: left;
+  word-spacing: 1.5px;
 }
 .button-nav {
   display: flex;
@@ -95,6 +103,20 @@ header {
   background-color: black;
 }
 
+@keyframes from-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   .content-text {
     margin-left: 5px;
@@ -107,6 +129,7 @@ header {
     flex-direction: column;
     width: 100%;
     margin-top: 30px;
+    border: none;
   }
   .main-content img {
     min-width: 400px;
@@ -119,13 +142,27 @@ header {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .main-content img {
     min-width: 300px;
     align-self: center;
     box-shadow: none;
+    margin-left: 0px;
   }
   .header-content {
-    gap: 15px;
+    gap: 8px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .header-content {
+    gap: 5px;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .header-content {
+    gap: 3px;
+  }
+  .header-content a {
+    padding: 10px 5px;
   }
 }

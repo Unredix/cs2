@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="css/leiras.css" />
   </head>
   <header>
     <div class="header-line">
       <div class="header-content">
-        <a href="index.html">Kezdőlap</a>
-        <a href="kepek.html">Képek</a>
-        <a href="leiras.html" class="current-site">Leírás</a>
-        <a href="forras.html">Forrás</a>
+        <a href="index.html">Main page</a>
+        <a href="kepek.html">Pictures</a>
+        <a href="leiras.html" class="current-site">Description</a>
+        <a href="forras.html">Sources</a>
       </div>
     </div>
   </header>
@@ -23,14 +26,58 @@
           <img src="assets/cs2.jpg" alt="" />
         </div>
       </div>
-      <div class="botton-nav">
-        <div class="buttons">
-          <nav>
-            <a href="kepek.html"><- Prev</a>
+      <div class="main-content">
+        <div class="main-container">
+          <div class="title">
+            <div class="title-text">
+              <p>
+                I don't know what to write here so here's some more information
+                about the game:
+              </p>
+            </div>
+          </div>
+          <div class="trailer">
+            <div class="trailer-text">
+              <p>This is the Launch Trailer of the game:</p>
+            </div>
+            <div class="trailer-video">
+              <iframe
+                width="1120"
+                height="630"
+                src="https://www.youtube.com/embed/c80dVYcL69E?si=oFr_Ns_dHSj1_DZl"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="player-count">
+            <div class="player-count-text">
+              <p>CS2's player count is the highest on steam</p>
+            </div>
+
+            <div class="player-count-img">
+              <img src="assets/playercount.png" alt="" />
+            </div>
+          </div>
+          <div class="most-expensive">
+            <div class="most-expensive-text">
+              <p>CS2's most expensive skin valued over $1.3M</p>
+            </div>
+            <div class="most-expensive-img">
+              <img src="assets/cs2mostexpensive.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="botton-nav">
+            <a href="kepek.html"><-Back</a>
             <a href="forras.html">Next-></a>
-          </nav>
         </div>
       </div>
     </div>
   </body>
+  <script src="js/leiras.js"></script>
 </html>

@@ -26,6 +26,21 @@ header {
   border-top: 0;
 }
 
+.banner img {
+  width: 100%;
+}
+
+.forras {
+  margin-top: 100px;
+  justify-self: center;
+}
+.forras p {
+  font-size: 1.8em;
+}
+.forras-text li {
+  font-size: 1.4em;
+}
+
 .header-content a {
   text-decoration: none;
   color: black;
@@ -37,6 +52,9 @@ header {
 .button-nav {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
 }
 .buttons {
   justify-self: center;
