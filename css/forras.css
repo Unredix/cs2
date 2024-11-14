@@ -84,4 +84,14 @@ header {
   .header-content {
     gap: 25px;
   }
+  .banner-img {
+    width: 0;
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header-content {
+    font-size: 0.89em;
+    gap: 1px;
+  }
 }

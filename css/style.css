@@ -137,15 +137,6 @@ header {
   0% {
     opacity: 0;
   }
-  20% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  80% {
-    opacity: 0.8;
-  }
   100% {
     opacity: 1;
   }
@@ -183,6 +174,7 @@ header {
 @media only screen and (max-width: 365px) {
   .header-content {
     gap: 3px;
+    font-size: 0.98em;
   }
   .header-content a {
     padding: 10px 5px;

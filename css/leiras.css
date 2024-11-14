@@ -150,3 +150,9 @@ p {
     transform: scale(0.8);
   }
 }
+@media screen and (max-width: 600px) {
+  .header-content {
+    gap: 1px;
+    font-size: 0.89em;
+  }
+}
